@@ -14,6 +14,7 @@ header .lang { padding: .1rem .6rem; border: 1px solid var(--line); border-radiu
 main { max-width: 52rem; margin: 0 auto; padding: 1rem; }
 h1 { font-size: 1.8rem; margin: 1rem 0 .5rem; }
 h2 { font-size: 1.25rem; margin: 1.6rem 0 .3rem; }
+h3 { font-size: 1.05rem; margin: 1.2rem 0 .2rem; }
 .paths { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: .8rem; padding: 0;
   list-style: none; }
 .paths a { display: block; height: 100%; padding: 1rem; background: var(--soft); border: 1px solid var(--line);
