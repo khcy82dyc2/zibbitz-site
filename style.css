@@ -1,0 +1,28 @@
+/* Zibbitz preview site: one small sheet, system fonts, nothing loaded from elsewhere. */
+:root { --ink: #2b2620; --paper: #fbf7ef; --warm: #c8642d; --soft: #efe6d4; --line: #d9ccb4; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); line-height: 1.6;
+  font-family: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+.banner { margin: 0; padding: .4rem 1rem; background: var(--warm); color: #fff; text-align: center; font-size: .9rem; }
+header { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; padding: .8rem 1rem;
+  border-bottom: 1px solid var(--line); max-width: 52rem; margin: 0 auto; }
+header .home { font-weight: 700; font-size: 1.2rem; color: var(--ink); text-decoration: none; }
+header nav { display: flex; flex-wrap: wrap; gap: .3rem .9rem; flex: 1; }
+header a { color: var(--ink); }
+header nav a[aria-current="page"] { font-weight: 700; text-decoration: none; }
+header .lang { padding: .1rem .6rem; border: 1px solid var(--line); border-radius: 1rem; text-decoration: none; }
+main { max-width: 52rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.8rem; margin: 1rem 0 .5rem; }
+h2 { font-size: 1.25rem; margin: 1.6rem 0 .3rem; }
+.paths { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: .8rem; padding: 0;
+  list-style: none; }
+.paths a { display: block; height: 100%; padding: 1rem; background: var(--soft); border: 1px solid var(--line);
+  border-radius: .6rem; color: var(--ink); text-decoration: none; }
+.paths a strong { display: block; font-size: 1.15rem; }
+.paths a:hover, .paths a:focus { border-color: var(--warm); }
+.todo { color: #7a6f60; font-style: italic; }
+.kids { font-size: 1.15rem; }
+.log dt { font-weight: 700; margin-top: 1rem; }
+.log dd { margin: 0; }
+footer { max-width: 52rem; margin: 2rem auto 0; padding: 1rem; border-top: 1px solid var(--line); font-size: .85rem;
+  color: #6b604f; }
