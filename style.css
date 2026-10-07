@@ -1,9 +1,10 @@
 /* Zibbitz preview site: one small sheet, system fonts, nothing loaded from elsewhere. */
-:root { --ink: #2b2620; --paper: #fbf7ef; --warm: #c8642d; --soft: #efe6d4; --line: #d9ccb4; }
+:root { --ink: #2b2620; --paper: #fbf7ef; --warm: #c8642d; --soft: #efe6d4; --line: #d9ccb4;
+  --banner: #b05727; /* white on it is 4.95:1, WCAG AA for small text (the warm accent alone was 3.95) */ }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--paper); color: var(--ink); line-height: 1.6;
   font-family: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
-.banner { margin: 0; padding: .4rem 1rem; background: var(--warm); color: #fff; text-align: center; font-size: .9rem; }
+.banner { margin: 0; padding: .4rem 1rem; background: var(--banner); color: #fff; text-align: center; font-size: .9rem; }
 header { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; padding: .8rem 1rem;
   border-bottom: 1px solid var(--line); max-width: 52rem; margin: 0 auto; }
 header .home { font-weight: 700; font-size: 1.2rem; color: var(--ink); text-decoration: none; }
@@ -25,5 +26,7 @@ h3 { font-size: 1.05rem; margin: 1.2rem 0 .2rem; }
 .kids { font-size: 1.15rem; }
 .log dt { font-weight: 700; margin-top: 1rem; }
 .log dd { margin: 0; }
+footer .legal { display: flex; flex-wrap: wrap; gap: .2rem .9rem; }
+footer .legal a { color: #6b604f; }
 footer { max-width: 52rem; margin: 2rem auto 0; padding: 1rem; border-top: 1px solid var(--line); font-size: .85rem;
   color: #6b604f; }
