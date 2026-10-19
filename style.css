@@ -30,3 +30,4 @@ footer .legal { display: flex; flex-wrap: wrap; gap: .2rem .9rem; }
 footer .legal a { color: #6b604f; }
 footer { max-width: 52rem; margin: 2rem auto 0; padding: 1rem; border-top: 1px solid var(--line); font-size: .85rem;
   color: #6b604f; }
+.twin { color: #6b604f; font-size: .95em; }
